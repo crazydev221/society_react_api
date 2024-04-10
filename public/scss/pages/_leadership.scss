@@ -1,0 +1,83 @@
+// Leadership One
+.leadership-one {
+    padding: 6em 0;
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        padding: 3em 0;
+    }
+}
+
+// Leadership Two
+.leadership-two {
+    padding-bottom: 6em;
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        padding-bottom: 3em;
+    }
+}
+
+// Donation One
+.donation-one {
+    .heading-one {
+        position: relative;
+        display: inline-block;
+        padding: 0 10em;
+
+        // Max 767px
+        @media (max-width: $break-767) {
+            padding: 0;
+        }
+        img {
+            position: absolute;
+            top: 1em;
+            z-index: 5;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                display: none;
+            }
+            &.ptrn-one {
+                left: 0;
+            }
+            &.ptrn-two {
+                right: 0;
+            }
+        }
+    }
+    .donation-box-one {
+        height: 100%;
+    }
+}
+
+// Review One
+.review-one {
+    padding: 6em 0;
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        padding: 3em 0;
+    }
+    .leadership-slider {
+        .owl-dots {
+            margin-top: 0 !important;
+            position: absolute;
+            bottom: 60px;
+            left: 60px;
+            display: flex;
+            gap: 16px;
+            .owl-dot {
+                span {
+                    margin: 0;
+                    background-color: $clr-E9D7FE;
+                }
+                &.active {
+                    span {
+                        background-color: $white-clr;
+                    }
+                }
+            }
+        }
+    }
+}

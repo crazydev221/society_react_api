@@ -1,0 +1,87 @@
+// Buttons
+.btn {
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.5;
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 10px 14px;
+    text-transform: capitalize;
+    box-shadow: none;
+    text-shadow: none;
+    outline: none;
+    &:hover,
+    &:focus {
+        outline: none;
+        box-shadow: none;
+        text-shadow: none;
+        border: 1px solid;
+    }
+
+    // Max 767px
+    @media (max-width: $break-767) {
+    }
+}
+
+// Btn 42307D
+.btn-42307D {
+    color: $white-clr;
+    background-color: $clr-42307D;
+    border-color: $clr-42307D;
+    &:hover,
+    &:focus {
+        color: $white-clr;
+        background-color: darken($clr-42307D, 10%);
+        border-color: darken($clr-42307D, 10%);
+    }
+}
+
+// Btn 7F56D9
+.btn-7F56D9 {
+    color: $white-clr;
+    background-color: $clr-7F56D9;
+    border-color: $clr-7F56D9;
+    &:hover,
+    &:focus {
+        color: $white-clr;
+        background-color: darken($clr-7F56D9, 5%);
+        border-color: darken($clr-7F56D9, 5%);
+    }
+}
+
+// Btn White Border
+.btn-white-border {
+    color: $clr-344054;
+    background-color: $white-clr;
+    border-color: $clr-D0D5DD;
+    &:hover,
+    &:focus {
+        color: $clr-344054;
+        background-color: darken($white-clr, 5%);
+        border-color: darken($clr-D0D5DD, 5%);
+    }
+}
+
+// Social Btn
+.social-btn {
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.5;
+    padding: 10px 14px;
+    text-align: center;
+    color: $clr-344054;
+    background-color: $white-clr;
+    border: 1px solid $clr-D0D5DD;
+    border-radius: 8px;
+    &:hover,
+    &:focus {
+        color: $white-clr;
+        background-color: darken($clr-6941C6, 5%);
+        border-color: darken($clr-6941C6, 5%);
+    }
+    img {
+        margin-right: 12px;
+        max-width: 20px;
+        vertical-align: sub;
+    }
+}

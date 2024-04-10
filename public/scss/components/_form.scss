@@ -1,0 +1,98 @@
+// Form
+input,
+textarea,
+select {
+    outline: none;
+    box-shadow: none;
+    text-shadow: none;
+    &:focus {
+        outline: none;
+        box-shadow: none !important;
+        text-shadow: none;
+    }
+}
+
+.links-14 {
+    font-size: 0.875em;
+    font-weight: 600;
+    color: $clr-6941C6;
+}
+
+.form-group {
+    label {
+        font-size: 0.875em;
+        font-weight: 500;
+        line-height: 1.5;
+        margin-bottom: 3px;
+        color: $clr-344054;
+    }
+    .form-control {
+        font-size: 1em;
+        line-height: 1.5;
+        padding: 10px 14px;
+        color: $clr-475467;
+        background-color: $white-clr;
+        border: 1px solid $clr-D0D5DD;
+        border-radius: 8px;
+        height: auto;
+        &:focus {
+            background-color: $clr-F1F1F1;
+            border-color: $clr-7F56D9;
+        }
+        &::placeholder {
+            color: $clr-667085;
+        }
+    }
+}
+
+// Checkboox One
+.checkbox-one {
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 1.5;
+    color: $clr-344054;
+    display: inline-block;
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 0;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    .checkmark {
+        position: absolute;
+        top: 2px;
+        left: 0;
+        height: 16px;
+        width: 16px;
+        border: 1px solid $clr-D0D5DD;
+        border-radius: 4px;
+        &:after {
+            content: "";
+            position: absolute;
+            display: none;
+            left: 5px;
+            top: 1px;
+            width: 5px;
+            height: 8px;
+            border: solid $white-clr;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+    }
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+        &:checked ~ .checkmark {
+            background-color: $clr-7F56D9;
+            border-color: $clr-7F56D9;
+            &:after {
+                display: block;
+            }
+        }
+    }
+}

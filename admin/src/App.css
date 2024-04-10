@@ -1,0 +1,87 @@
+body {
+    font-size: 15px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+.card {
+    background-color: #f7f7f7;
+    border-radius: 6px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.upload-sec {
+    margin-top: 10px;
+}
+
+.navbar-brand {
+    font-size: 18px;
+    font-weight: 600;
+}
+.navbar-dark .navbar-toggler {
+    color: #fff;
+    opacity: 1;
+    border-color: #fff;
+    padding: 5px;
+    line-height: 1;
+    outline: none;
+    box-shadow: none;
+}
+
+.body-content {
+    padding: 3em 0;
+}
+
+.login-box {
+    max-width: 350px;
+    margin: auto;
+}
+
+.login-box .card-body {
+    padding: 40px;
+}
+
+.gallery-table-one img {
+    width: auto;
+    height: 80px;
+}
+
+.profile-img-card {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    border-radius: 50%;
+}
+.loader-sd {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.blocks-wrapper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+@media only screen and (max-width: 767px) {
+body {
+    font-size: 14px;
+}
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.8rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+}

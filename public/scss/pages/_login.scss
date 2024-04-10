@@ -1,0 +1,172 @@
+// Login Page
+.login-page {
+    &:after {
+        content: "";
+        background-image: linear-gradient(45deg, $clr-42307D, $clr-7F56D9);
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        // Max 767px
+        @media (max-width: $break-767) {
+            display: none;
+        }
+    }
+    .left-sec {
+        padding-bottom: 1.5em;
+        .login-form {
+            max-width: 360px;
+            margin: auto;
+            padding: 3em 0;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                padding: 1.5em 0 0;
+            }
+            .logo-sec {
+                text-align: center;
+                margin-bottom: 3em;
+
+                // Max 767px
+                @media (max-width: $break-767) {
+                    margin-bottom: 2em;
+                }
+                a {
+                    display: inline-block;
+                    img {
+                        height: 100px;
+                    }
+                }
+            }
+            .heading-one {
+                margin-bottom: 2em;
+
+                // Max 767px
+                @media (max-width: $break-767) {
+                    margin-bottom: 1em;
+                }
+                h1 {
+                    + p {
+                        margin-top: 12px;
+
+                        // Max 767px
+                        @media (max-width: $break-767) {
+                            margin-top: 8px;
+                        }
+                    }
+                }
+            }
+            .forgot-sec {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .checkbox-one {
+                    margin-bottom: 0;
+                }
+            }
+            .have-account {
+                text-align: center;
+                font-size: 0.875em;
+                a {
+                    font-size: 1em;
+                    font-weight: 600;
+                }
+            }
+        }
+        .copyright {
+            font-size: 0.875em;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                display: none;
+            }
+        }
+    }
+    .right-sec {
+        max-width: 500px;
+        margin: auto;
+
+        // Max 767px
+        @media (max-width: $break-767) {
+            display: none;
+        }
+    }
+}
+
+// Page Load Modal
+.pageLoadModal {
+    .modal-dialog {
+        max-width: 400px;
+        .modal-content {
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0px 20px 24px -4px rgba(16, 24, 40, 0.08), 0px 8px 8px -4px rgba(16, 24, 40, 0.03);
+            .modal-body {
+                padding: 1.5em;
+                .tuts-slider {
+                    .owl-dots {
+                        text-align: center;
+                        margin-top: 20px;
+                        width: 100%;
+                        .owl-dot {
+                            line-height: 1;
+                            span {
+                                margin: 0;
+                                display: inline-block;
+                                background-color: $clr-F2F4F7;
+                                border: none;
+                                width: 10px;
+                                height: 10px;
+                            }
+                            &:hover,
+                            &.active {
+                                span {
+                                    background-color: $clr-6941C6;
+                                }
+                            }
+                            + .owl-dot {
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+                }
+                .question-slider {
+                    .owl-nav {
+                        position: relative;
+                        z-index: 9;
+                        margin-top: 15px;
+                        display: flex;
+                        gap: 10px;
+                        [class*="owl-"] {
+                            margin: 0;
+                            &.owl-prev,
+                            &.owl-next {
+                                color: $white-clr;
+                                background-color: $clr-7F56D9;
+                                font-size: 1.5em;
+                                line-height: 1.2;
+                                border: 1px solid $clr-4A1FB8;
+                                border-radius: 0;
+                                width: 30px;
+                                &:hover {
+                                    background-color: $clr-4A1FB8;
+                                    border-color: $clr-5720B7;
+                                }
+                            }
+                        }
+                    }
+                }
+                .btn-sec {
+                    display: flex;
+                    gap: 12px;
+                    margin-top: 2em;
+                    .btn {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,392 @@
+// Research One
+.research-one {
+    background-color: $clr-F9FAFB;
+    padding: 5em 0 3em;
+    text-align: center;
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        padding: 2em 0;
+    }
+    .search-bar {
+        margin-bottom: 0.5em;
+        .form-group {
+            padding: 9px 15px;
+            background-color: $white-clr;
+        }
+    }
+    p {
+        font-size: 0.875em;
+    }
+}
+
+// Research Two
+.research-two {
+    padding: 3em 0;
+    .filter-one {
+        margin-bottom: 1.5em;
+
+        // Max 767px
+        @media (max-width: $break-767) {
+            margin-bottom: 0.5em;
+        }
+    }
+    .questions {
+        font-size: $fz-14;
+        h5 {
+            display: inline-block;
+            text-decoration: underline;
+            font-size: $fz-base;
+            line-height: 1.6;
+        }
+    }
+    .left-sec {
+        .table {
+            margin-bottom: 0;
+            border: 1px solid $clr-EAECF0;
+            border-bottom: none;
+            thead {
+                tr {
+                    th {
+                        border: none;
+                        border-bottom: 1px solid $clr-EAECF0;
+                        background-color: $clr-F9FAFB;
+                        font-size: $fz-12;
+                        padding: 13px 24px;
+                        vertical-align: middle;
+                        &:first-child {
+                            width: 60%;
+
+                            // Max 767px
+                            @media (max-width: $break-767) {
+                                width: auto;
+                                min-width: 300px;
+                            }
+                        }
+                        &:nth-child(2) {
+                            width: 25%;
+
+                            // Max 767px
+                            @media (max-width: $break-767) {
+                                width: auto;
+                                min-width: 150px;
+                            }
+                        }
+                        &:last-child {
+                            width: 15%;
+
+                            // Max 767px
+                            @media (max-width: $break-767) {
+                                width: auto;
+                                min-width: 110px;
+                            }
+                        }
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    cursor: pointer;
+                    td {
+                        border: none;
+                        border-bottom: 1px solid $clr-EAECF0;
+                        font-size: 0.875em;
+                        padding: 13px 24px;
+                        vertical-align: middle;
+                        &:first-child {
+                            position: relative;
+                            padding-left: 30px;
+                            img {
+                                position: absolute;
+                                left: 8px;
+                            }
+                        }
+                        h5 {
+                            font-size: 1em;
+                            margin-bottom: 5px;
+                            color: $clr-101828;
+                        }
+                        .meta {
+                            font-size: $fz-12;
+                            margin-bottom: 0;
+                            span {
+                                display: inline-block;
+                                position: relative;
+                                + span {
+                                    padding-left: 10px;
+                                    margin-left: 10px;
+                                    &:before {
+                                        content: "|";
+                                        position: absolute;
+                                        left: 0;
+                                        top: 0;
+                                    }
+                                }
+                            }
+                        }
+                        .author {
+                            margin-bottom: 0;
+                            span {
+                                display: block;
+                            }
+                        }
+                    }
+                    &:hover {
+                        td {
+                            background-color: $clr-EAECF0;
+                        }
+                    }
+                }
+            }
+        }
+        .pagination-one {
+            border: 1px solid $clr-EAECF0;
+            border-top: none;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                justify-content: center;
+            }
+            .btn-sec {
+                // Max 767px
+                @media (max-width: $break-767) {
+                    position: absolute;
+                    width: 100%;
+                    left: 0;
+                    justify-content: space-between;
+                    padding: 0 1em;
+                    z-index: 5;
+                }
+            }
+        }
+        .heading-one {
+            margin-bottom: 15px;
+        }
+        .meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+            span {
+                font-size: $fz-12;
+                display: inline-block;
+                max-width: 540px;
+                img {
+                    margin-left: 10px;
+                }
+            }
+            .btn {
+                font-size: $fz-14;
+            }
+        }
+        .questions {
+            margin-top: 30px;
+            ul {
+                margin-bottom: 15px;
+            }
+        }
+    }
+    .right-sec {
+        padding-left: 2em;
+        border-left: 1px solid $clr-EAECF0;
+
+        // Max 767px
+        @media (max-width: $break-767) {
+            padding-left: 0;
+            border-left: none;
+        }
+        .box-one {
+            color: $clr-364152;
+            p {
+                margin-bottom: 0;
+                font-size: $fz-14;
+                b {
+                    color: $clr-4A1FB8;
+                }
+                + h5 {
+                    margin-top: 15px;
+                }
+            }
+            h6 {
+                margin-bottom: 5px;
+                font-size: 0.875em;
+                font-weight: 700;
+            }
+            .disk-list {
+                list-style-position: inside;
+                padding-left: 0;
+                font-weight: 500;
+                font-size: 0.875em;
+            }
+            + .box-one {
+                margin-top: 1.5em;
+            }
+            &.donate-box-one {
+                position: relative;
+                box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.08), 0px 4px 6px -2px rgba(16, 24, 40, 0.03);
+                h5 {
+                    font-size: 1.125em;
+                    font-weight: 600;
+                    margin-bottom: 0;
+                }
+                .ammount {
+                    margin: 1em 0;
+                    span {
+                        font-size: 3.5em;
+                        font-weight: 600;
+                        color: $clr-101828;
+                    }
+                    sub {
+                        font-size: $fz-base;
+                        line-height: 1;
+                    }
+                }
+                p {
+                    margin-bottom: 2em;
+                }
+                .overlay-content {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    position: absolute;
+                    top: 20px;
+                    right: 10px;
+
+                    // Max 767px
+                    @media (max-width: $break-767) {
+                        top: 10px;
+                        right: 35px;
+                    }
+                    span {
+                        width: 170px;
+                        font-size: 0.875em;
+                        font-weight: 700;
+                        color: $clr-6941C6;
+                        display: inline-block;
+                        text-align: center;
+                    }
+                    img {
+                        max-width: 100px;
+                        position: relative;
+                        top: -15px;
+                        right: -30px;
+
+                        // Max 767px
+                        @media (max-width: $break-767) {
+                            max-width: 70px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .ask-question {
+        // Max 767px
+        @media (max-width: $break-767) {
+            text-align: center;
+        }
+        h6 {
+            font-size: 0.875em;
+            font-weight: 500;
+            color: $clr-344054;
+            margin-bottom: 6px;
+        }
+        p {
+            margin-bottom: 0;
+            margin-top: 6px;
+            font-size: 0.875em;
+        }
+    }
+    .answer-sec {
+        h5 {
+            font-size: 0.875em;
+            font-weight: 500;
+            color: $clr-344054;
+            margin-bottom: 6px;
+        }
+    }
+}
+
+// Research Three
+.research-three {
+    padding: 3em 0;
+    .left-sec {
+        .img-sec {
+            img {
+                // Max 767px
+                @media (max-width: $break-767) {
+                    display: none;
+                }
+            }
+        }
+    }
+    .right-sec {
+        position: relative;
+        .clipart {
+            position: absolute;
+            top: -120px;
+            right: -60px;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                display: none;
+            }
+        }
+        ul {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2em;
+            margin-top: 4em;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                margin-top: 2em;
+                gap: 1em;
+            }
+            li {
+                width: 45%;
+                h4 {
+                    font-size: 3.75em;
+                    font-weight: 600;
+                    color: $clr-7F56D9;
+                    margin-bottom: 0;
+
+                    // Max 767px
+                    @media (max-width: $break-767) {
+                        font-size: 2em;
+                    }
+                }
+                p {
+                    margin-bottom: 0;
+                    font-weight: 600;
+                    color: $clr-101828;
+                }
+            }
+        }
+    }
+}
+
+// Research Four
+.research-four {
+    padding: 3em 0;
+    .heading-one {
+        h1 {
+            color: $clr-42307D;
+        }
+        p {
+            b {
+                color: $clr-42307D;
+            }
+        }
+    }
+    .guide-info-box {
+        + .guide-info-box {
+            margin-top: 2em;
+        }
+    }
+    .w-1122 {
+        margin: auto;
+        max-width: 1122px;
+    }
+}

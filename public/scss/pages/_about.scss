@@ -1,0 +1,82 @@
+// About One
+.about-one {
+    padding-top: 3em;
+    .btn-sec {
+        position: absolute;
+        top: 30px;
+        right: -30%;
+        z-index: 5;
+        display: flex;
+        gap: 15px;
+
+        // Max 767px
+        @media (max-width: $break-767) {
+            position: relative;
+            top: unset;
+            right: unset;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-top: 15px;
+        }
+        .btn {
+            width: 100%;
+        }
+    }
+    .clipart {
+        position: absolute;
+        top: -40%;
+        right: 15%;
+
+        // Max 767px
+        @media (max-width: $break-767) {
+            display: none;
+        }
+    }
+}
+
+// About Two
+.about-two {
+    padding: 3em 0;
+    .paragraph {
+        p {
+            margin-bottom: 0;
+            font-size: 1.125em;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                font-size: 1em;
+            }
+            span {
+                font-weight: 600;
+                color: $clr-53389E;
+            }
+
+            b {
+                font-weight: 600;
+            }
+            + p {
+                margin-top: 24px;
+
+                // Max 767px
+                @media (max-width: $break-767) {
+                    margin-top: 16px;
+                }
+            }
+        }
+    }
+}
+
+// About Three
+.about-three {
+    .btn-sec {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-top: 2.5em;
+
+        // Max 767px
+        @media (max-width: $break-767) {
+            margin-top: 2em;
+        }
+    }
+}

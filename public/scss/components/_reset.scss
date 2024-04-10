@@ -1,0 +1,82 @@
+// Reset
+* {
+    &::-webkit-scrollbar {
+        width: 8px;
+        height: 6px;
+    }
+    &::-webkit-scrollbar-track {
+        background-color: rgba($clr-999999, 0.2);
+        border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: rgba($clr-999999, 0.6);
+        border-radius: 10px;
+    }
+}
+body {
+    font-family: $ff-inter;
+    font-size: $fz-base;
+    font-weight: 400;
+    line-height: 1.6;
+    color: $clr-475467;
+    background-color: $white-clr;
+    overflow-x: hidden;
+}
+ul,
+ol {
+    list-style-type: none;
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 15px;
+}
+a {
+    text-decoration: none;
+    transition: 0.3s;
+    color: $clr-7F56D9;
+    &:hover {
+        color: $clr-7F56D9;
+        text-decoration: none;
+    }
+}
+a,
+button,
+input,
+textarea,
+select {
+    &:focus,
+    &:hover,
+    &:active {
+        outline: none;
+        box-shadow: none;
+    }
+}
+small {
+    font-size: $fz-12;
+}
+section {
+    position: relative;
+}
+hr {
+    border-color: $clr-D0D5DD;
+}
+img {
+    max-width: 100%;
+}
+.container {
+    @media (min-width: $break-1300) {
+        max-width: 1280px;
+    }
+}
+.gap-1 {
+    gap: 1em 0;
+}
+.gap-2 {
+    gap: 2em 0;
+}

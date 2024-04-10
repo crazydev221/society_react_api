@@ -1,0 +1,50 @@
+// Google Font
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+// Bootstrap
+@import "../plugins/bootstrap/scss/bootstrap.scss";
+
+// Font Awesome
+@import "../plugins/font-awesome/scss/font-awesome.scss";
+
+// Line Icon
+@import "../plugins/lineicons/scss/lineicons.scss";
+
+// Owl Carousel
+@import "../plugins/owl-carousel/scss/owl.carousel.scss";
+@import "../plugins/owl-carousel/scss/owl.theme.default.scss";
+
+// Star Rating
+@import "../plugins/star_rating/star_rating.scss";
+
+// Phone
+@import "../plugins/phone/phone.scss";
+
+// Components
+@import "components/variables";
+@import "components/mixins";
+@import "components/font";
+@import "components/reset";
+@import "components/width";
+@import "components/buttons";
+@import "components/form";
+@import "components/box";
+@import "components/owl-edit";
+@import "components/components";
+@import "components/heading";
+@import "components/header";
+@import "components/footer";
+
+// Pages
+@import "pages/login";
+@import "pages/home";
+@import "pages/research";
+@import "pages/about";
+@import "pages/volunteer";
+@import "pages/privacy";
+@import "pages/contact";
+@import "pages/profile";
+@import "pages/work";
+@import "pages/thankyou";
+@import "pages/why-ai";
+@import "pages/leadership";

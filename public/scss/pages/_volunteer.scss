@@ -1,0 +1,142 @@
+// Volunteer One
+.volunteer-one {
+    padding: 6em 0;
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        padding: 3em 0;
+    }
+    .heading-one {
+        max-width: 730px;
+        margin: auto;
+        margin-bottom: 6em;
+
+        // Max 767px
+        @media (max-width: $break-767) {
+            margin-bottom: 3em;
+        }
+    }
+    form {
+        max-width: 480px;
+        margin: auto;
+        .checkbox-one {
+            margin-bottom: 0;
+            font-size: $fz-base;
+            .checkmark {
+                top: 5px;
+            }
+            a {
+                text-decoration: underline;
+                color: inherit;
+            }
+        }
+    }
+}
+
+// Volunteer Two
+.volunteer-two {
+    padding: 3em 0;
+    background-color: $clr-F9FAFB;
+}
+
+// Volunteer Three
+.volunteer-three {
+    img {
+        width: 100%;
+    }
+}
+
+// Volunteer Four
+.volunteer-four {
+    padding: 6em 0;
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        padding: 3em 0;
+    }
+    .heading-three {
+        h1 {
+            margin-bottom: 0;
+        }
+    }
+    .btn-sec {
+        position: absolute;
+        top: 70%;
+        right: 4%;
+        transform: translateY(-50%);
+
+        // Max 767px
+        @media (max-width: $break-767) {
+            position: relative;
+            top: unset;
+            right: unset;
+            transform: unset;
+            margin-top: 15px;
+        }
+        .btn {
+            min-width: 300px;
+        }
+    }
+    .clipart {
+        position: absolute;
+        right: 23%;
+
+        // Max 767px
+        @media (max-width: $break-767) {
+            right: 0%;
+            transform: rotateZ(290deg);
+            height: 30px;
+            bottom: 20px;
+        }
+    }
+}
+
+// Volunteer Five
+.volunteer-five {
+    padding: 6em 0 2em;
+    background-color: $clr-F9FAFB;
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        padding: 3em 0 2em;
+    }
+    .paragraph {
+        p,
+        ul {
+            font-size: 1.125em;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                font-size: 1em;
+            }
+        }
+        h6 {
+            font-size: 1em;
+            font-weight: 700;
+        }
+    }
+    .img-sec {
+        margin-top: 3em;
+
+        // Max 767px
+        @media (max-width: $break-767) {
+            margin-top: 1.5em;
+        }
+    }
+    .right-sec {
+        padding-left: 2em;
+
+        // Max 767px
+        @media (max-width: $break-767) {
+            padding-left: 0;
+        }
+        .number-list {
+            color: $clr-6941C6;
+            li {
+                + li {
+                    margin-top: 0.5em;
+                }
+            }
+        }
+    }
+}

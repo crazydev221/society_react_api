@@ -1,0 +1,112 @@
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+.card-container.card {
+  max-width: 350px !important;
+  padding: 40px 40px;
+}
+
+.card {
+  background-color: #f7f7f7;
+  padding: 20px 25px 30px;
+  margin: 0 auto 25px;
+  margin-top: 50px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.profile-img-card {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 10px;
+  display: block;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+
+
+.tax-one {
+  padding: 4em 0;
+  color: #ffffff;
+  background-color: #42307d;
+}
+.tax-one .heading-one {
+  max-width: 700px;
+  display: inline-block;
+}
+.tax-one .heading-one h1 {
+  font-weight: 200;
+  color: inherit;
+}
+.tax-two {
+  padding: 3em 0;
+}
+.tax-two .content {
+  max-width: 800px;
+}
+.tax-two .content .table {
+  text-align: center;
+}
+.tax-two .content .table thead th,
+.tax-two .content .table tbody td {
+  font-size: 14px;
+  vertical-align: middle;
+}
+.tax-two .content .table thead th {
+  background-color: #efefef;
+  border-bottom: none;
+}
+.tax-two .content .table-50 thead th {
+  width: 50%;
+}
+.tax-two .content .table-50 tbody tr td:last-child {
+  background-color: #f8f9fa;
+}
+.tax-two .icon-sec {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.tax-two .icon-sec .img-sec {
+  border-right: 1px solid #d0d5dd;
+  width: 130px;
+}
+.tax-two .icon-sec .img-sec img {
+  width: 100%;
+}
+.tax-two .icon-sec .details-sec {
+  width: calc(100% - 150px);
+}
+.tax-two .icon-sec .details-sec h5 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.tax-two .icon-sec .details-sec p {}
+
+.loader-sd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 9;
+}
+.blocks-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}

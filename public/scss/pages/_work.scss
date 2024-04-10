@@ -1,0 +1,34 @@
+// Our Work One
+.work-one {
+    padding: 3em 0;
+    .thumb-slider-section {
+        margin: 3em 0;
+
+        // Max 767px
+        @media (max-width: $break-767) {
+            margin: 1.5em 0;
+        }
+        #big-slider {
+            .caption-image-box-one {
+                max-width: 1040px;
+                margin: auto;
+            }
+        }
+        #thumbs-slider {
+            max-width: 1080px;
+            margin: auto;
+            margin-top: 1.5em;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                margin-top: 0.5em;
+            }
+        }
+    }
+    .btn-sec {
+        margin-top: 1.5em;
+        .btn {
+            min-width: 215px;
+        }
+    }
+}

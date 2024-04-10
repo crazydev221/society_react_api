@@ -1,0 +1,72 @@
+// Why Ai One
+.why-ai-one {
+    padding: 3em 0;
+    background-color: $clr-F9F5FF;
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%);
+        background-color: $white-clr;
+        width: 100%;
+        height: 10%;
+    }
+    video {
+        max-width: 100%;
+        margin: 2em 0;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+}
+
+// Why Ai Two
+.why-ai-two {
+    padding: 3em 0;
+    .disk-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 15px;
+        font-size: 1.125em;
+
+        // Max 767px
+        @media (max-width: $break-767) {
+            font-size: 1em;
+        }
+        li {
+            width: 45%;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                width: 100%;
+            }
+        }
+    }
+}
+
+// Why Ai Three
+.why-ai-three {
+    padding: 3em 0;
+    background-color: $clr-F9F5FF;
+    .btn-sec {
+        position: relative;
+        margin-top: 3em;
+        img {
+            position: absolute;
+            top: -150%;
+            left: 28%;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                left: -2%;
+                width: 80px;
+                transform: rotate(45deg);
+            }
+        }
+        .btn {
+            min-width: 215px;
+        }
+    }
+}

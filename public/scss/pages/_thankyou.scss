@@ -1,0 +1,72 @@
+// Thankyou One
+.thankyou-one {
+    // Max 767px
+    @media (max-width: $break-767) {
+        padding-top: 3em;
+    }
+    .left-sec {
+        .ptrn-text {
+            position: absolute;
+            top: -50%;
+            right: 20%;
+            z-index: 5;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                position: relative;
+                top: 0;
+                right: 0;
+            }
+            img {
+                position: absolute;
+                left: -100%;
+                top: -5px;
+
+                // Max 767px
+                @media (max-width: $break-767) {
+                    left: unset;
+                    top: -55px;
+                    right: 110px;
+                    transform: rotateY(160deg);
+                    width: 100px;
+                }
+            }
+            span {
+                display: block;
+                font-size: $fz-14;
+                font-weight: 600;
+                color: $clr-6941C6;
+                width: 150px;
+                text-align: center;
+                position: relative;
+                top: 10px;
+
+                // Max 767px
+                @media (max-width: $break-767) {
+                    font-size: 12px;
+                    width: 120px;
+                    top: -40px;
+                }
+            }
+        }
+        .search-bar {
+            margin: 3em 0 0.5em;
+            display: flex;
+            gap: 10px;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                margin-top: 1em;
+            }
+            .form-group {
+                width: 100%;
+                max-width: 360px;
+            }
+        }
+    }
+    .right-sec {
+        .img-sec {
+            text-align: right;
+        }
+    }
+}

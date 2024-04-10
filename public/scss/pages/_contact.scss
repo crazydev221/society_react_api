@@ -1,0 +1,68 @@
+// Contact One
+.contact-one {
+    padding: 6em 0;
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        padding: 3em 0;
+    }
+    .heading-three {
+        margin-bottom: 4em;
+
+        // Max 767px
+        @media (max-width: $break-767) {
+            margin-bottom: 0;
+        }
+    }
+    .contact-info-box-two {
+        height: 100%;
+    }
+}
+
+// Contact Two
+.contact-two {
+    .left-sec {
+        padding: 6em;
+
+        // Max 767px
+        @media (max-width: $break-767) {
+            padding: 0;
+        }
+        .heading-three {
+            margin-bottom: 3em;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                margin-bottom: 1.5em;
+            }
+        }
+        .checkbox-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 0.5em 0;
+            li {
+                width: 45%;
+
+                // Max 767px
+                @media (max-width: $break-767) {
+                    width: 100%;
+                }
+                .checkbox-one {
+                    margin-bottom: 0;
+                    font-size: $fz-base;
+                    .checkmark {
+                        top: 5px;
+                    }
+                }
+            }
+        }
+    }
+    .right-sec {
+        .img-sec {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

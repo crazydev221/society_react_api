@@ -1,0 +1,123 @@
+// Privacy One
+.privacy-one {
+    padding: 3em 0;
+    .heading-one {
+        max-width: 770px;
+        margin: auto;
+    }
+    .content {
+        max-width: 770px;
+        margin: auto;
+        p,
+        ul {
+            font-size: 1.125em;
+            margin-bottom: 0;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                font-size: 1em;
+            }
+            + h6 {
+                margin-top: 1.5em;
+            }
+            + p {
+                margin-top: 1em;
+            }
+        }
+        h6 {
+            font-size: 1.125em;
+            font-weight: 700;
+            margin-bottom: 1.5em;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                font-size: 1em;
+            }
+        }
+        .disk-list {
+            li {
+                + li {
+                    margin-top: 0.5em;
+                }
+            }
+        }
+    }
+}
+
+// Support
+.support-one {
+    padding: 8em 0 4em;
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        padding: 3em 0;
+    }
+    .heading-one {
+        max-width: 768px;
+    }
+    .btn-sec {
+        position: absolute;
+        top: -80px;
+        right: 0;
+        text-align: center;
+
+        // Max 767px
+        @media (max-width: $break-767) {
+            position: relative;
+            top: 0;
+            margin-top: 1em;
+        }
+        .logo-sec {
+            display: block;
+            margin: auto;
+            margin-bottom: 1em;
+        }
+        .clipart {
+            position: absolute;
+            bottom: -110%;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                bottom: -70%;
+                right: 0;
+                max-width: 40px;
+                z-index: 5;
+            }
+        }
+    }
+}
+
+// Support Two
+.support-two {
+    width: 100%;
+    max-width: 1380px;
+    margin-left: auto;
+}
+
+// Support Three
+.support-three {
+    padding: 3em 0;
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        padding: 3em 0;
+    }
+    .heading-one {
+        max-width: 768px;
+        margin: auto;
+    }
+}
+
+// Support Four
+.support-four {
+    padding: 3em 0;
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        padding: 3em 0;
+    }
+    .heading-one {
+        max-width: 1208px;
+        margin: auto;
+    }
+}

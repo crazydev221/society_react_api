@@ -1,0 +1,43 @@
+// Main Footer
+.main-footer {
+    font-size: 0.875em;
+    padding: 2em 0;
+    background-color: $clr-D0D5DD;
+    color: $clr-475467;
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        text-align: center;
+        padding: 1.4em 0;
+        background-color: $no-clr;
+    }
+    p {
+        margin-bottom: 0;
+    }
+    a {
+        color: inherit;
+    }
+    .left-sec {
+        p {
+            small {
+                // Max 767px
+                @media (max-width: $break-767) {
+                    display: none;
+                }
+            }
+        }
+    }
+    .right-sec {
+        text-align: right;
+
+        // Max 767px
+        @media (max-width: $break-767) {
+            display: none;
+        }
+
+        .social-one {
+            justify-content: end;
+            margin-bottom: 15px;
+        }
+    }
+}

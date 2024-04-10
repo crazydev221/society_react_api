@@ -1,0 +1,27 @@
+service: werpurple-backend
+provider:
+  name: aws
+  runtime: nodejs18.x
+  stage: production
+  region: us-east-1
+  environment:
+    NODE_ENV: production
+functions:
+  app:
+    handler: app.handler
+    events: 
+      - http: 
+          path: /
+          method: ANY
+          cors: true
+      - http: 
+          path: /{proxy+}
+          method: ANY
+          cors: true
+
+plugins:
+  - serverless-offline
+
+custom:
+  serverless-offline:
+    noPrependStageInUrl: true  

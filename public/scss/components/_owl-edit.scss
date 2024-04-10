@@ -1,0 +1,89 @@
+// Login Slider
+.login-slider {
+    .owl-nav {
+        max-width: 280px;
+        margin: 45px auto 0;
+        position: relative;
+        z-index: 9;
+        [class*="owl-"] {
+            margin: 0;
+            position: absolute;
+            top: 0;
+            &.owl-prev,
+            &.owl-next {
+                color: $white-clr;
+                background-color: $no-clr;
+                font-size: 1.5em;
+                line-height: 1;
+                &:hover {
+                    color: $clr-E9D7FE;
+                }
+            }
+            &.owl-prev {
+                left: 0;
+            }
+            &.owl-next {
+                right: 0;
+            }
+        }
+    }
+    .owl-dots {
+        position: absolute;
+        text-align: center;
+        margin: 0;
+        width: 100%;
+        .owl-dot {
+            line-height: 1;
+            span {
+                margin: 0;
+                display: inline-block;
+                background-color: $clr-9E77ED;
+                border: none;
+                width: 10px;
+                height: 10px;
+            }
+            &:hover,
+            &.active {
+                span {
+                    background-color: $white-clr;
+                }
+            }
+            + .owl-dot {
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+// Thumbnail Slider
+.thumb-slider-section {
+    #big-slider {
+        .owl-nav {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            width: 100%;
+            button {
+                margin: 0;
+                position: absolute;
+                font-size: 1.5em;
+                line-height: 1;
+                color: $clr-667085;
+                background-color: $no-clr;
+                &:hover {
+                    color: $clr-667085;
+                    background-color: $no-clr;
+                }
+                &.owl-prev {
+                    left: 0;
+                }
+                &.owl-next {
+                    right: 0;
+                }
+            }
+        }
+    }
+    #thumbs-slider {
+    }
+}

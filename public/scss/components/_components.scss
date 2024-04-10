@@ -1,0 +1,226 @@
+// Overflown
+.overflown {
+    overflow: hidden;
+    position: relative;
+}
+
+// Drodown Menu
+.dropdown-menu {
+    margin: 0;
+    border-color: $clr-EAECF0;
+    border-radius: 4px;
+    right: 0;
+    left: unset !important;
+    padding: 0;
+    min-width: 200px;
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        position: fixed !important;
+    top: unset !important;
+    bottom: 0;
+    transform: none !important;
+    width: 100%;
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .dropdown-item {
+        padding: 12px 14px;
+        font-size: 0.875em;
+        font-weight: 500;
+        color: $clr-344054;
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+
+        span {
+            display: inline;
+        }
+
+        &:hover {
+            color: $clr-344054;
+            background-color: rgba($clr-7F56D9, 0.25);
+        }
+
+        +.dropdown-item {
+            border-top: 1px solid $clr-D6BBFB;
+        }
+    }
+}
+
+// Search Bar
+.search-bar {
+    position: relative;
+
+    .form-group {
+        border: 1px solid $clr-D0D5DD;
+        border-radius: 8px;
+        padding: 12px 15px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        button {
+            background-color: $no-clr;
+            border: none;
+            padding: 0;
+            line-height: 1;
+            cursor: pointer;
+        }
+
+        .form-control {
+            border: none;
+            padding: 0;
+            background-color: $no-clr;
+
+            &:hover,
+            &:focus {
+                background-color: $no-clr;
+            }
+        }
+    }
+}
+
+// Number List
+.number-list {
+    list-style-type: decimal;
+    list-style-position: outside;
+    padding-left: 1.5em;
+}
+
+// Disk List
+.disk-list {
+    list-style-type: disc;
+    list-style-position: outside;
+    padding-left: 1.5em;
+}
+
+// Social One
+.social-one {
+    display: flex;
+    gap: 15px;
+
+    a {
+        display: inline-block;
+
+        img {
+            width: 24px;
+        }
+    }
+}
+
+// Filter One
+.filter-one {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    flex-wrap: wrap;
+
+    h5 {
+        font-size: 1.125em;
+        font-weight: 600;
+        margin-bottom: 0;
+        color: $clr-101828;
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+
+        // Max 767px
+        @media (max-width: $break-767) {
+            font-size: 0.875em;
+        }
+    }
+
+    .btn-sec {
+        display: flex;
+        gap: 2em;
+
+        // Max 767px
+        @media (max-width: $break-767) {
+            gap: 0.5em;
+        }
+
+        .btn {
+            font-size: 0.875em;
+            padding-right: 3em;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                font-size: 0.875em;
+                padding: 0.5em;
+                padding-right: 1.5em;
+            }
+
+            &:after {
+                content: "";
+                border: none;
+                margin-left: 0;
+                background-image: url(../images/icon/arrow-down.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 13px;
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                top: 50%;
+                right: 1em;
+                transform: translateY(-50%);
+
+                // Max 767px
+                @media (max-width: $break-767) {
+                    width: 16px;
+                    height: 16px;
+                    right: inherit;
+                    background-size: 11px;
+                }
+            }
+        }
+    }
+}
+
+// Pagination One
+.pagination-one {
+    padding: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.875em;
+    position: relative;
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        padding: 1em;
+    }
+
+    .btn-sec {
+        display: flex;
+        gap: 16px;
+
+        .btn {
+            padding: 8px 14px;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                padding: 10px;
+            }
+
+            img {
+                display: none;
+
+                // Max 767px
+                @media (max-width: $break-767) {
+                    display: block;
+                }
+            }
+
+            span {
+
+                // Max 767px
+                @media (max-width: $break-767) {
+                    display: none;
+                }
+            }
+        }
+    }
+}

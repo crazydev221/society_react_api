@@ -1,0 +1,57 @@
+// Heading One
+.heading-one {
+    span {
+        color: $clr-6941C6;
+        font-weight: 600;
+        display: inline;
+        + h1 {
+            margin-top: 12px;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                margin-top: 8px;
+            }
+        }
+    }
+    h1 {
+        font-size: 36px;
+        font-weight: 600;
+        margin-bottom: 0;
+        color: $clr-101828;
+        letter-spacing: -2px;
+
+        // Max 767px
+        @media (max-width: $break-767) {
+            font-size: 22px;
+            letter-spacing: 0;
+        }
+        span {
+            color: $clr-42307D;
+        }
+        + p {
+            margin-top: 24px;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                margin-top: 16px;
+            }
+        }
+    }
+    p {
+        margin-bottom: 0;
+        span {
+            font-weight: normal;
+            display: inline;
+            color: $clr-6941C6;
+        }
+        + h1,
+        + p {
+            margin-top: 24px;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                margin-top: 16px;
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+// Font Sizes
+.fz-60 {
+    font-size: 60px !important;
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        font-size: 24px !important;
+    }
+}
+.fz-48 {
+    font-size: 48px !important;
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        font-size: 32px !important;
+    }
+}
+.fz-30 {
+    font-size: 30px !important;
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        font-size: 20px !important;
+    }
+}
+.fz-20 {
+    font-size: 20px !important;
+}
+.fz-18 {
+    font-size: 18px !important;
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        font-size: 16px !important;
+    }
+}
+.fz-14 {
+    font-size: $fz-14 !important;
+}
+.fz-12 {
+    font-size: $fz-12 !important;
+}
+
+// Font Weight
+.font-weight-600 {
+    font-weight: 600 !important;
+}
